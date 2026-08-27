@@ -105,19 +105,22 @@ const { t } = useLanguage()
 
 const revenue = ref(10000)
 const expenses = ref(3000)
+
+const safeRevenue = computed(() => revenue.value || 0)
+const safeExpenses = computed(() => expenses.value || 0)
 const chartRef = ref(null)
 let chartInstance = null
 
 const opexPct = 30
-const limit = computed(() => revenue.value * (opexPct / 100))
-const usedPct = computed(() => limit.value > 0 ? (expenses.value / limit.value) * 100 : 0)
+const limit = computed(() => safeRevenue.value * (opexPct / 100))
+const usedPct = computed(() => limit.value > 0 ? (safeExpenses.value / limit.value) * 100 : 0)
 
 const breakdown = computed(() => {
-  const ownerPay = revenue.value * 0.50
-  const tax = revenue.value * 0.15
-  const profit = revenue.value * 0.05
+  const ownerPay = safeRevenue.value * 0.50
+  const tax = safeRevenue.value * 0.15
+  const profit = safeRevenue.value * 0.05
   return [
-    { label: t('ចំណាយប្រតិបត្តិការ', 'Operating'), amount: expenses.value, color: '#94a3b8', pctDisplay: (expenses.value / revenue.value) * 100 },
+    { label: t('ចំណាយប្រតិបត្តិការ', 'Operating'), amount: safeExpenses.value, color: '#94a3b8', pctDisplay: safeRevenue.value > 0 ? (safeExpenses.value / safeRevenue.value) * 100 : 0 },
     { label: t('ប្រាក់ខ្លួនឯង', 'Owner Pay'), amount: ownerPay, color: '#3b82f6', pctDisplay: 50 },
     { label: t('ពន្ធ', 'Tax'), amount: tax, color: '#f59e0b', pctDisplay: 15 },
     { label: t('ប្រាក់ចំណេញ', 'Profit'), amount: profit, color: '#10b981', pctDisplay: 5 },
@@ -125,8 +128,8 @@ const breakdown = computed(() => {
 })
 
 const status = computed(() => {
-  const remaining = limit.value - expenses.value
-  if (expenses.value <= limit.value) {
+  const remaining = limit.value - safeExpenses.value
+  if (safeExpenses.value <= limit.value) {
     return {
       color: '#10b981',
       bg: 'rgba(16,185,129,0.06)',
@@ -149,9 +152,9 @@ function renderChart() {
   if (chartInstance) chartInstance.destroy()
   if (!chartRef.value) return
   const cc = getChartColors()
-  const ownerPay = revenue.value * 0.50
-  const tax = revenue.value * 0.15
-  const profit = revenue.value * 0.05
+  const ownerPay = safeRevenue.value * 0.50
+  const tax = safeRevenue.value * 0.15
+  const profit = safeRevenue.value * 0.05
   chartInstance = new Chart(chartRef.value, {
     type: 'doughnut',
     data: {
@@ -162,7 +165,7 @@ function renderChart() {
         t('ប្រាក់ចំណេញ', 'Profit'),
       ],
       datasets: [{
-        data: [expenses.value, ownerPay, tax, profit],
+        data: [safeExpenses.value, ownerPay, tax, profit],
         backgroundColor: ['#94a3b8', '#3b82f6', '#f59e0b', '#10b981'],
         borderColor: cc.border,
         borderWidth: 2
