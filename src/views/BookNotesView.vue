@@ -74,7 +74,7 @@
         <!-- Warning -->
         <div v-if="sec.warning" class="mt-4 border-2 border-dashed rounded-lg px-4 py-3" :style="{ borderColor: 'var(--red)' }">
           <p class="text-[10px] uppercase tracking-widest font-bold mb-1" :style="{ color: 'var(--red)' }">
-            {{ t('កំហុសដែលគេធ្វើบ่อย', 'COMMON MISTAKE') }}
+            {{ t('កំហុសដែលគេធ្វើថ្វើ', 'COMMON MISTAKE') }}
           </p>
           <p class="text-sm" :style="{ color: 'var(--text-body)' }">{{ t(sec.warning.km, sec.warning.en) }}</p>
         </div>
