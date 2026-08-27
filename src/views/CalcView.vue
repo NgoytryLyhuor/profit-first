@@ -76,7 +76,7 @@ const revenue = ref(10000)
 const chartRef = ref(null)
 let chartInstance = null
 
-const safeRevenue = computed(() => revenue.value || 0)
+const safeRevenue = computed(() => Math.max(0, revenue.value || 0))
 
 const allocs = [
   { name: 'profit', pct: 5, color: '#10b981', km: 'ប្រាក់ចំណេញ', en: 'PROFIT' },

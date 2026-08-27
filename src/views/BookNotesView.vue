@@ -74,7 +74,7 @@
         <!-- Warning -->
         <div v-if="sec.warning" class="mt-4 border-2 border-dashed rounded-lg px-4 py-3" :style="{ borderColor: 'var(--red)' }">
           <p class="text-[10px] uppercase tracking-widest font-bold mb-1" :style="{ color: 'var(--red)' }">
-            {{ t('កំហុសដែលគេធ្វើថ្វើ', 'COMMON MISTAKE') }}
+            {{ t('កំហុសដែលគេធ្វើញឹកញាប់', 'COMMON MISTAKE') }}
           </p>
           <p class="text-sm" :style="{ color: 'var(--text-body)' }">{{ t(sec.warning.km, sec.warning.en) }}</p>
         </div>
@@ -212,7 +212,7 @@ const sections = [
     points: [
       { km: 'កំណត់រំលឹកទូរស័ព្ទសម្រាប់ថ្ងៃទី ១ និង ១៥', en: 'Set phone reminders for the 1st and 15th' },
       { km: 'ធ្វើការបំណែកចែកមុនពេលបើកប្រាក់ខែបុគ្គលិក', en: 'Allocate before paying employee salaries' },
-      { km: 'កុំខកថ្ងៃណាមួយ — នេះជាអាយុរស់របស់អាជីវកម្ម', en: 'Never miss a day — this is business lifeline' },
+      { km: 'កុំខកថ្ងៃណាមួយ — នេះជាឈាមជីវិតនៃអាជីវកម្ម', en: 'Never miss a day — this is the lifeline of your business' },
     ],
   },
   {
@@ -274,11 +274,11 @@ const sections = [
 ]
 
 const quotes = [
-  { km: 'Profit is not an event — it is a habit.', en: 'Profit is not an event — it is a habit.' },
-  { km: 'The money you don\'t see is the money you don\'t spend.', en: 'The money you don\'t see is the money you don\'t spend.' },
-  { km: 'Businesses fail because they are overfed, not underfed.', en: 'Businesses fail because they are overfed, not underfed.' },
-  { km: 'When you take profit first, the remaining money is not enough to fund waste — so waste goes away.', en: 'When you take profit first, the remaining money is not enough to fund waste — so waste goes away.' },
-  { km: 'The goal is not to die with the most money — the goal is to live the most while making money.', en: 'The goal is not to die with the most money — the goal is to live the most while making money.' },
-  { km: 'If you wait for "extra" money to save, you will wait forever.', en: 'If you wait for "extra" money to save, you will wait forever.' },
+  { km: 'ប្រាក់ចំណេញមិនមែនជារឿងមួយនោះទេ — វាជាទម្លាប់។', en: 'Profit is not an event — it is a habit.' },
+  { km: 'លុយដែលអ្នកមិនឃើញ គឺជាលុយដែលអ្នកមិនចំណាយ។', en: 'The money you don\'t see is the money you don\'t spend.' },
+  { km: 'អាជីវកម្មបរាជ័យព្រោះវាត្រូវបានបំប៉នច្រើនពេក មិនមែនតិចពេកទេ។', en: 'Businesses fail because they are overfed, not underfed.' },
+  { km: 'នៅពេលអ្នកយកប្រាក់ចំណេញជាមុន លុយដែលនៅសល់មិនគ្រប់គ្រាន់សម្រាប់ចំណាយឥតប្រយោជន៍ — ដូច្នេះការចំណាយឥតប្រយោជន៍ក៏បាត់។', en: 'When you take profit first, the remaining money is not enough to fund waste — so waste goes away.' },
+  { km: 'គោលបំណងមិនមែនស្លាប់ជាមួយលុយច្រើនបំផុតទេ — គោលបំណងគឺរស់នៅឱ្យបានល្អបំផុតក្នុងពេលរកលុយ។', en: 'The goal is not to die with the most money — the goal is to live the most while making money.' },
+  { km: 'ប្រសិនបើអ្នករង់ចាំលុយ "បន្ថែម" ដើម្បីសន្សំ អ្នកនឹងរង់ចាំរហូត។', en: 'If you wait for "extra" money to save, you will wait forever.' },
 ]
 </script>

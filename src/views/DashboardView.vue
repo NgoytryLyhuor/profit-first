@@ -50,7 +50,7 @@
           Revenue - Profit = Expenses
         </p>
         <p class="text-xs mt-2" :style="{ color: 'var(--text-muted)' }">
-          {{ t('ដាក់ប្រាក់ចំណេញសិន សិន រួចដំណើរការជាមួយអ្វីដែលនៅសល់', 'Take profit first, then run the business on what\'s left') }}
+          {{ t('ដាក់ប្រាក់ចំណេញសិន រួចដំណើរការជាមួយអ្វីដែលនៅសល់', 'Take profit first, then run the business on what\'s left') }}
         </p>
       </div>
     </div>

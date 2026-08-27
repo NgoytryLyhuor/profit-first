@@ -106,8 +106,8 @@ const { t } = useLanguage()
 const revenue = ref(10000)
 const expenses = ref(3000)
 
-const safeRevenue = computed(() => revenue.value || 0)
-const safeExpenses = computed(() => expenses.value || 0)
+const safeRevenue = computed(() => Math.max(0, revenue.value || 0))
+const safeExpenses = computed(() => Math.max(0, expenses.value || 0))
 const chartRef = ref(null)
 let chartInstance = null
 
