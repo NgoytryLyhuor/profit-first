@@ -70,7 +70,7 @@
         </div>
         <div class="text-center">
           <p class="text-[10px] uppercase tracking-widest mb-1" :style="{ color: 'var(--text-label)' }">{{ t('ការប្រើប្រាស់', 'USED') }}</p>
-          <p class="text-xl font-display font-bold" :style="{ color: status.color }">${{ expenses.toFixed(0) }}</p>
+          <p class="text-xl font-display font-bold" :style="{ color: status.color }">${{ safeExpenses.toFixed(0) }}</p>
         </div>
       </div>
       <div class="mt-3 flex justify-between text-[10px]" :style="{ color: 'var(--text-label)' }">

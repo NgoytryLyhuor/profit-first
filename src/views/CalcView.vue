@@ -76,6 +76,8 @@ const revenue = ref(10000)
 const chartRef = ref(null)
 let chartInstance = null
 
+const safeRevenue = computed(() => revenue.value || 0)
+
 const allocs = [
   { name: 'profit', pct: 5, color: '#10b981', km: 'ប្រាក់ចំណេញ', en: 'PROFIT' },
   { name: 'owner', pct: 50, color: '#3b82f6', km: 'ប្រាក់ខ្លួនឯង', en: 'OWNER PAY' },
@@ -85,7 +87,7 @@ const allocs = [
 
 const results = computed(() => allocs.map(a => ({
   ...a,
-  amount: revenue.value * (a.pct / 100)
+  amount: safeRevenue.value * (a.pct / 100)
 })))
 
 function renderChart() {
