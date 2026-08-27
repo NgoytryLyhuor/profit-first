@@ -121,7 +121,7 @@ const sections = [
     points: [
       { km: '៨៣% នៃអាជីវកម្មអាមេរិក "ខាត" លុយ — មិនមែនដោយសារចំណូលទេ ដោយសាររបៀបគ្រប់គ្រង', en: '83% of American businesses "lose" money — not because of revenue, but because of management' },
       { km: 'អាជីវកម្មដែលមានចំណូល $25 លាន អាចខាតប្រាក់ ចំណែកអ្នកលក់ផ្កាអាចរកប្រាក់បាន', en: 'A $25M business can lose money while a flower seller can be profitable' },
-      { km: 'បញ្ហាគឺ "ភាពអត់ឃ្លាន" របស់អាជីវកម្ម — ចំណាយកើនតាមចំណូល', en: 'The problem is "business Parkinson\'s Law" — expenses grow to match revenue' },
+      { km: 'បញ្ហាគឺ "ច្បាប់ Parkinson របស់អាជីវកម្ម" — ចំណាយកើនឡើងតាមចំណូល', en: 'The problem is "business Parkinson\'s Law" — expenses grow to match revenue' },
     ],
     example: {
       km: 'អ្នកលក់ផ្កា Mary មានចំណូល $300,000/ឆ្នាំ តែរកប្រាក់បានច្រើនជាង CEO ក្រុមហ៊ុនដែលមានចំណូល $25 លាន។ ហេតុអី? Mary ប្រើរូបមន្ត Profit First។',
@@ -212,7 +212,7 @@ const sections = [
     points: [
       { km: 'កំណត់រំលឹកទូរស័ព្ទសម្រាប់ថ្ងៃទី ១ និង ១៥', en: 'Set phone reminders for the 1st and 15th' },
       { km: 'ធ្វើការបំណែកចែកមុនពេលបើកប្រាក់ខែបុគ្គលិក', en: 'Allocate before paying employee salaries' },
-      { km: 'កុំខកថ្ងៃណាមួយ — នេះជាអាយុជីវិតអាជីវកម្ម', en: 'Never miss a day — this is business lifeline' },
+      { km: 'កុំខកថ្ងៃណាមួយ — នេះជាអាយុរស់របស់អាជីវកម្ម', en: 'Never miss a day — this is business lifeline' },
     ],
   },
   {
@@ -223,7 +223,7 @@ const sections = [
     kmBody: 'Mike ពន្យល់ថា អាជីវកម្មដែល "ខាត" លុយ ជារឿយៗមានចំណូលច្រើន — តែចំណាយកើនតាមចំណូល។ នេះជា "ច្បាប់ Parkinson សម្រាប់អាជីវកម្ម"។ នៅពេលអ្នកមាន $50,000 ក្នុងគណនី — អ្នក "ត្រូវការ" ឧបករណ៍ $45,000។ នៅពេលអ្នកមាន $500 — អ្នក "ត្រូវការ" អ្វីមួយក្នុងតម្លៃ $450។',
     enBody: 'Mike explains that money-losing businesses often have high revenue — but expenses grow to match. This is "Business Parkinson\'s Law." When you have $50,000 in your account — you "need" a $45,000 tool. When you have $500 — you "need" something for $450.',
     points: [
-      { km: 'Profit First ប្រើច្បាប់ Parkinson ជា "អាវុធដ៏មានឥទ្ធិពល" — កាត់បន្ថយលុយដែលនៅសល់ ដើម្បីកាត់បន្ថយចំណាយ', en: 'Profit First uses Parkinson\'s Law as a "powerful weapon" — reduce available money to reduce spending' },
+      { km: 'Profit First ប្រើច្បាប់ Parkinson ជា "វិធីសាស្រ្តដ៏មានប្រសិទ្ធភាព" — កាត់បន្ថយលុយដែលនៅសល់ ដើម្បីកាត់បន្ថយចំណាយ', en: 'Profit First uses Parkinson\'s Law as a "powerful weapon" — reduce available money to reduce spending' },
       { km: 'នៅពេល Operating Account តិច — អ្នកនឹងរកវិធីកាត់បន្ថយចំណាយដែលអ្នកមិនដែលគិតថាអាចកាត់បន្ថយបាន', en: 'When Operating is less — you find cuts you never thought possible' },
       { km: 'នេះជាមូលហេតុដែល Profit Account ត្រូវនៅធនាគារផ្សេង — ដើម្បីធ្វើឱ្យការដកលុយពិបាក', en: 'This is why Profit must be at a different bank — to make access inconvenient' },
     ],
@@ -238,7 +238,7 @@ const sections = [
     points: [
       { km: 'នេះជាអ្វីដែលធ្វើឱ្យ Profit First ខុសគ្នាពី "គណនេយ្យបែបបុរាណ" — វាបង្ខំអ្នកឱ្យផ្លាស់ប្តូរ', en: 'This is what makes Profit First different from "traditional accounting" — it forces change' },
       { km: 'នៅពេល Operating Account អស់ — អ្នកនឹងរកឃើញវិធីកាត់បន្ថយចំណាយដែលអ្នកមិនដែលគិតថាអាចធ្វើបាន', en: 'When Operating runs out — you find cuts you never thought possible' },
-      { km: 'នេះជាមូលហេតុដែលអាជីវកម្មដែលប្រើ Profit First ក្លាយជា "រស់រវើក" និង "ប្រើប្រាស់ធនធានបានល្អ"។', en: 'This is why Profit First businesses become "thrifty" and "resourceful"' },
+      { km: 'នេះជាមូលហេតុដែលអាជីវកម្មដែលប្រើ Profit First ក្លាយជា "សន្សំសំចៃ" និង "ប្រើប្រាស់ធនធានបានល្អ"។', en: 'This is why Profit First businesses become "thrifty" and "resourceful"' },
     ],
     warning: {
       km: 'កំហុសធំបំផុត៖ គិតថា "ខ្ញុំនឹងយកពី Profit Account សិន ហើយនឹងដាក់ត្រឡប់មកវិញនៅខែក្រោយ" — អ្នកនឹងមិនដែលដាក់ត្រឡប់មកវិញទេ។',
