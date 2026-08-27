@@ -15,7 +15,7 @@
           :style="{ background: 'var(--bg-card)' }">
           <div class="flex items-center gap-3">
             <div class="w-9 h-9 rounded-lg flex items-center justify-center text-sm font-bold shrink-0"
-              :style="{ background: rule.bg, color: rule.color }">{{ rule.icon }}</div>
+              :style="{ background: rule.bg, color: rule.color }"><span v-html="rule.icon"></span></div>
             <div>
               <p class="text-sm font-bold" :style="{ color: 'var(--text-heading)' }">
                 {{ t(rule.kmTitle, rule.enTitle) }}
@@ -25,7 +25,7 @@
               </p>
             </div>
           </div>
-          <span class="text-lg transition-transform duration-300 shrink-0" :style="{ color: 'var(--text-muted)', transform: open[i] ? 'rotate(180deg)' : 'rotate(0deg)' }">&#9662;</span>
+          <span class="text-lg transition-transform duration-300 shrink-0" :style="{ color: 'var(--text-muted)', transform: open[i] ? 'rotate(180deg)' : 'rotate(0deg)' }"><span v-html="'&#9662;'"></span></span>
         </button>
         <div class="overflow-hidden transition-all duration-300 px-5" :style="{ maxHeight: open[i] ? '300px' : '0px', paddingBottom: open[i] ? '20px' : '0px' }">
           <p class="text-sm leading-relaxed" :style="{ color: 'var(--text-muted)' }">
