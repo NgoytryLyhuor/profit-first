@@ -10,6 +10,7 @@ const routes = [
   { path: '/calc', name: 'calc', component: () => import('./views/CalcView.vue') },
   { path: '/tiers', name: 'tiers', component: () => import('./views/TiersView.vue') },
   { path: '/rules', name: 'rules', component: () => import('./views/RulesView.vue') },
+  { path: '/notes', name: 'notes', component: () => import('./views/BookNotesView.vue') },
   { path: '/track', name: 'track', component: () => import('./views/TrackView.vue') },
 ]
 

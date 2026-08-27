@@ -99,6 +99,7 @@ const navItems = [
   { page: 'calc', to: '/calc', icon: '&#8721;', km: 'គណនាការបែងចែក', en: 'Allocation Calc' },
   { page: 'tiers', to: '/tiers', icon: '&#9733;', km: 'ចំណូលតាមកម្រិត', en: 'Revenue Tiers' },
   { page: 'rules', to: '/rules', icon: '&#10003;', km: 'គោលការណ៍ ៥', en: '5 Components' },
+  { page: 'notes', to: '/notes', icon: '&#9998;', km: 'សេចក្តីសង្ខេបសៀវភៅ', en: 'Book Notes' },
   { page: 'track', to: '/track', icon: '&#9776;', km: 'តាមដានចំណាយ', en: 'Expenses' },
 ]
 
@@ -107,6 +108,7 @@ const mobileNavItems = [
   { page: 'calc', to: '/calc', icon: '&#8721;', km: 'គណនា', en: 'Calc' },
   { page: 'tiers', to: '/tiers', icon: '&#9733;', km: 'កម្រិត', en: 'Tiers' },
   { page: 'rules', to: '/rules', icon: '&#10003;', km: 'គោល', en: 'Rules' },
+  { page: 'notes', to: '/notes', icon: '&#9998;', km: 'សៀវភៅ', en: 'Notes' },
   { page: 'track', to: '/track', icon: '&#9776;', km: 'ចំណាយ', en: 'Track' },
 ]
 </script>
