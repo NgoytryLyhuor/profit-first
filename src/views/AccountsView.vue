@@ -14,7 +14,7 @@
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg font-bold shrink-0"
               :style="{ background: acc.bg, color: acc.color }">
-              {{ acc.icon }}
+              <span v-html="acc.icon"></span>
             </div>
             <div>
               <h3 class="font-bold" :style="{ color: acc.color }">{{ t(acc.kmName, acc.enName) }}</h3>
