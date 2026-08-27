@@ -28,11 +28,11 @@
       <button @click="toggleLang()"
         class="flex-1 flex items-center gap-3 px-3 py-2 rounded-lg text-xs transition cursor-pointer"
         :style="{ color: 'var(--text-label)' }">
-        <span class="w-5 text-center">&#9873;</span>
+        <span class="w-5 text-center" v-html="'&#9873;'"></span>
         <span>{{ lang === 'km' ? 'EN' : 'KM' }}</span>
       </button>
       <button @click="toggleTheme()" class="theme-btn" title="Toggle theme">
-        {{ theme === 'dark' ? '&#9790;' : '&#9789;' }}
+        <span v-html="theme === 'dark' ? '&#9790;' : '&#9789;'"></span>
       </button>
     </div>
   </aside>
@@ -65,7 +65,7 @@
         </button>
         <button @click="toggleTheme()" class="theme-btn"
           :style="{ width: '28px', height: '28px', fontSize: '12px' }" title="Toggle theme">
-          {{ theme === 'dark' ? '&#9790;' : '&#9789;' }}
+          <span v-html="theme === 'dark' ? '&#9790;' : '&#9789;'"></span>
         </button>
       </div>
     </header>
