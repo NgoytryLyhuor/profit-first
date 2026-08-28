@@ -14,9 +14,9 @@
           {{ t('ចំណូលប្រចាំខែ', 'MONTHLY REVENUE') }}
         </p>
         <div class="flex items-center gap-2">
-          <span class="text-lg font-bold" :style="{ color: 'var(--accent)' }">$</span>
-          <input type="number" v-model.number="revenue" step="100" min="0"
-            class="flex-1 border rounded-lg px-3 py-2 text-lg font-bold transition"
+          <span class="text-lg font-bold shrink-0" :style="{ color: 'var(--accent)' }">$</span>
+          <input type="number" v-model.number="revenue" step="100" min="0" inputmode="decimal"
+            class="flex-1 w-full min-w-0 max-w-full border rounded-lg px-3 py-2 text-lg font-bold transition"
             :style="{ background: 'var(--bg-input)', borderColor: 'var(--border-main)', color: 'var(--text-heading)' }" />
         </div>
       </div>
@@ -25,9 +25,9 @@
           {{ t('ចំណាយប្រតិបត្តិការពិតប្រាកដ', 'ACTUAL OPERATING EXPENSES') }}
         </p>
         <div class="flex items-center gap-2">
-          <span class="text-lg font-bold" :style="{ color: '#f59e0b' }">$</span>
-          <input type="number" v-model.number="expenses" step="100" min="0"
-            class="flex-1 border rounded-lg px-3 py-2 text-lg font-bold transition"
+          <span class="text-lg font-bold shrink-0" :style="{ color: '#f59e0b' }">$</span>
+          <input type="number" v-model.number="expenses" step="100" min="0" inputmode="decimal"
+            class="flex-1 w-full min-w-0 max-w-full border rounded-lg px-3 py-2 text-lg font-bold transition"
             :style="{ background: 'var(--bg-input)', borderColor: 'var(--border-main)', color: 'var(--text-heading)' }" />
         </div>
       </div>

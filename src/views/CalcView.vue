@@ -13,9 +13,9 @@
         {{ t('បញ្ចូលចំណូលប្រចាំខែ', 'ENTER MONTHLY REVENUE') }}
       </p>
       <div class="flex items-center gap-3">
-        <span class="text-2xl font-bold" :style="{ color: 'var(--accent)' }">$</span>
-        <input type="number" v-model.number="revenue" step="100" min="0"
-          class="flex-1 border rounded-lg px-4 py-3 text-2xl font-display font-bold transition"
+        <span class="text-2xl font-bold shrink-0" :style="{ color: 'var(--accent)' }">$</span>
+        <input type="number" v-model.number="revenue" step="100" min="0" inputmode="decimal"
+          class="flex-1 w-full min-w-0 max-w-full border rounded-lg px-4 py-3 text-2xl font-display font-bold transition"
           :style="{ background: 'var(--bg-input)', borderColor: 'var(--border-main)', color: 'var(--text-heading)' }" />
       </div>
     </div>
